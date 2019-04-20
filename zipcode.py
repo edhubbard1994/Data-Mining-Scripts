@@ -15,7 +15,7 @@ def getZipcode(loc):
     return(addressArr[len(addressArr)-2])
     
 def getZipcodeGoogle(lat, lon):
-    gkey = 'AIzaSyBVUPlgGQfy8UO3CB1kyiIDPgDqVFT_Fes'
+    gkey = ''
     g = Client(key=gkey)
     location = g.reverse_geocode((lat,lon))
     print(location)
